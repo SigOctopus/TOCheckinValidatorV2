@@ -1,0 +1,21 @@
+﻿using System;
+using System.Collections.Generic;
+
+namespace ConsoleApp1.Entities;
+
+public partial class Liste
+{
+    public int Pgs { get; set; }
+
+    public int Codice { get; set; }
+
+    public string Tipolislista { get; set; } = null!;
+
+    public string Elemento { get; set; } = null!;
+
+    public string Codstr { get; set; } = null!;
+
+    public int? Modificato { get; set; }
+
+    public virtual Strutture CodstrNavigation { get; set; } = null!;
+}
